@@ -1,2 +1,19 @@
-__pycache__
-.venv
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Model files (optional: exclude if models are large)
+*.pkl
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Logs
+*.log
