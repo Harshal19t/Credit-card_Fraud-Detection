@@ -1,32 +1,32 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 class Transaction(BaseModel):
-    V1: float
-    V2: float
-    V3: float
-    V4: float
-    V5: float
-    V6: float
-    V7: float
-    V8: float
-    V9: float
-    V10: float
-    V11: float
-    V12: float
-    V13: float
-    V14: float
-    V15: float
-    V16: float
-    V17: float
-    V18: float
-    V19: float
-    V20: float
-    V21: float
-    V22: float
-    V23: float
-    V24: float
-    V25: float
-    V26: float
-    V27: float
-    V28: float
-    Amount: float
+    V1: float = Field(..., gt=-10, lt=10)
+    V2: float = Field(..., gt=-10, lt=10)
+    V3: float = Field(..., gt=-10, lt=10)
+    V4: float = Field(..., gt=-10, lt=10)
+    V5: float = Field(..., gt=-10, lt=10)
+    V6: float = Field(..., gt=-10, lt=10)
+    V7: float = Field(..., gt=-10, lt=10)
+    V8: float = Field(..., gt=-10, lt=10)
+    V9: float = Field(..., gt=-10, lt=10)
+    V10: float = Field(..., gt=-10, lt=10)
+    V11: float = Field(..., gt=-10, lt=10)
+    V12: float = Field(..., gt=-10, lt=10)
+    V13: float = Field(..., gt=-10, lt=10)
+    V14: float = Field(..., gt=-10, lt=10)
+    V15: float = Field(..., gt=-10, lt=10)
+    V16: float = Field(..., gt=-10, lt=10)
+    V17: float = Field(..., gt=-10, lt=10)
+    V18: float = Field(..., gt=-10, lt=10)
+    V19: float = Field(..., gt=-10, lt=10)
+    V20: float = Field(..., gt=-10, lt=10)
+    V21: float = Field(..., gt=-10, lt=10)
+    V22: float = Field(..., gt=-10, lt=10)
+    V23: float = Field(..., gt=-10, lt=10)
+    V24: float = Field(..., gt=-10, lt=10)
+    V25: float = Field(..., gt=-10, lt=10)
+    V26: float = Field(..., gt=-10, lt=10)
+    V27: float = Field(..., gt=-10, lt=10)
+    V28: float = Field(..., gt=-10, lt=10)
+    Amount: float = Field(..., gt=0)

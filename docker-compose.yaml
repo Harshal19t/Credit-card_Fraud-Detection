@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  fraud-detection-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models  # Mount the models directory
+    environment:
+      - PYTHONPATH=/app
