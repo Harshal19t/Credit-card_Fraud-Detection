@@ -1,0 +1,30 @@
+# Version control
+.git/
+.gitignore
+
+# Python virtual env / caches
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Dataset & notebooks (not needed at runtime; model is loaded from models/*.pkl)
+data/
+models/*.ipynb
+models/.ipynb_checkpoints/
+
+# Dev/test tooling, not needed in the runtime image
+tests/
+requirements-dev.txt
+.github/
+
+# Docs & misc
+*.md
+test.ps1
+text.txt
+makefile
+
+# Editor/OS cruft
+.vscode/
+.idea/
+.DS_Store

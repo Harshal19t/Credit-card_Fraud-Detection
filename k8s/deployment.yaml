@@ -15,6 +15,7 @@ spec:
       containers:
       - name: fraud-detection-api
         image: fraud-detection-api:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8000
         resources:

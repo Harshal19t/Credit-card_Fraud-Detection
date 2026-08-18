@@ -8,8 +8,11 @@ data/
 __pycache__/
 *.py[cod]
 
-# Model files (optional: exclude if models are large)
-*.pkl
+# Model files: fraud_model.pkl (~1.7MB) is intentionally NOT ignored -- it's small
+# enough to commit directly and the app/Docker image needs it to be reproducible
+# from a fresh clone. If models grow larger later, switch to Git LFS instead of
+# just re-adding a blanket "*.pkl" ignore here (that would silently break clones).
+.ipynb_checkpoints/
 
 # IDE-specific files
 .vscode/
